@@ -1,0 +1,15 @@
+---
+# Update system and suchlike
+
+- name: upgrade all packages
+  dnf: name=* state=latest
+
+- name: install terminal mux
+  dnf: name=tmux state=present
+  dnf: name=byobu state=present
+
+- name: configure sshd
+  template: src=sshd.conf dest=/etc/ssh/sshd_config
+  template: src=ssh.conf dest=/etc/ssh/ssh_config
+  tags: sshd
+

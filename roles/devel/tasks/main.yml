@@ -1,0 +1,10 @@
+---
+# Install development tools
+
+- name: install devel tools
+  dnf: name=gcc state=present
+  dnf: name=mock state=present
+  dnf: name="@Debelopment Tools" state=present
+  dnf: name="@RPM Development Tools" state=present
+  dnf: name=gcc-arm-linux-gnu state=present
+  dnf: name=avr-gcc state=present

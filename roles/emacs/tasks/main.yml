@@ -1,0 +1,9 @@
+---
+# Install emacs
+
+- name: install emacs
+  dnf: name=emacs-nox state=present
+  dnf: name=emacs-undo-tree state=present
+  dnf: name=emacs-goto-chg state=present
+  dnf: name=emacs-pymacs state=present
+  dnf: name=emacs-evil state=present

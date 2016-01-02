@@ -1,0 +1,12 @@
+---
+
+- name: common tasks
+  hosts: all
+  connection: local
+  remote_user: root
+  roles:
+    - common
+    - emacs
+    - qtile
+    - devel
+    - virt

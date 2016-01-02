@@ -1,0 +1,5 @@
+---
+# Handle notifications of service restarts
+
+- name: restart sshd
+  service: name=sshd state=restarted

@@ -1,0 +1,13 @@
+---
+# install virt stack
+
+- name: install virt stack
+  dnf: name="@Virtualization" state=present
+  dnf: name=virt-manager state=present
+  dnf: name=qemu-system-arm state=present
+  dnf: name=dosbox state=present
+
+
+- name: add policykit rule
+  template: src=60-libvirt.rules dest=/etc/polkit-1/rules.d/60-libvirt.rules
+  tags: libvirt

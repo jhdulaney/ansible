@@ -1,0 +1,5 @@
+---
+# Handle notifications of service restarts
+
+- name: restart libvirt
+  service: name=libvirt state=restarted

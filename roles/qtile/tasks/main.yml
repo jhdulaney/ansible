@@ -1,0 +1,16 @@
+---
+# Install qtile + a few other gui bits
+
+- name: install gui things
+  dnf: name=dmenu state=present
+  dnf: name=qtile state=present
+  dnf: name=thunar state=present
+  dnf: name=eog state=present
+  dnf: name=evince state=present
+  dnf: name=calibre state=present
+  dnf: name=pnmixer state=present
+  dnf: name=network-manager-applet state=present
+  dnf: name=gnome-terminal state=present
+  dnf: name=conky state=present
+  dnf: name=ncmpcpp state=present
+  dnf: name=mumble state=present
